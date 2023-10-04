@@ -72,6 +72,7 @@ h1 {
     font-size: xx-large;
     font-style: italic;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
 }
 
          /*flex del menu de navegacion nav */
@@ -85,6 +86,12 @@ h1 {
 }
 
       /* decoracion del texto la litsa*/
+.nav :hover {
+    color: rgb(0, 143, 98);
+}
+.nav :active {
+    color: rgb(0, 143, 98);
+}
 a {
     text-decoration: none;
     color: rgb(85, 85, 85);
@@ -98,6 +105,9 @@ a :active {
 }
 .nav_div1 ul li a span {
     padding-left: 7%;
+}
+.nav-link {
+    color:  rgb(62, 62, 62);
 }
 
           /*   header    */
