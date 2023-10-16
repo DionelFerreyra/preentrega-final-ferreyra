@@ -1,0 +1,216 @@
+body {
+    background-color: nth($background-color, 3);
+
+    h1 {
+        font-family: $family-h1;
+        font-style: $font-style;
+        font-weight: bold;
+        @extend %titulos;
+    }
+
+    h2 {
+        font-family: $family-h2;
+        color: nth($text-color, 2);
+        font-weight: bold;
+    }
+
+    h3 {
+        font-family: $family-h3;
+        color: nth($text-color, 2);
+    }
+
+    p {
+        font-family: $family-p;
+        color: nth($text-color, 2);
+    }
+    a {
+        font-family: $family-a;
+        color: nth($text-color, 4);
+        text-decoration: none;
+        & :hover {
+            color: $hover;
+        }
+        & :active {
+            color: $active;
+        }
+    }
+}
+// nav de los archivos index, categorias y nosotros
+.nav_style1 {
+    @extend %position;
+    height: 96vh;
+    @include tablet-vertical-max {
+        background-color: red;
+    }
+                         //logo del sitio en el nav
+    .nav_div1 div {
+        @include display (flex, wrap, row, normal, center, center);
+    }
+                   //  menu de navegacion del sitio
+    .nav_div1 ul {
+        @include display (flex, wrap, column, normal, normal, normal);
+        width: 100%;
+        margin-top: 4vh;
+        @include tablet-chica-vertical {
+            justify-content: space-between;
+        }
+    }
+                //   decoracion del texto de la lista
+    .nav-link {
+        color: nth($text-color, 4);
+    }
+    .nav :hover {
+        color: $hover;
+    }
+    .nav :active {
+        color: $active;
+    }
+    .nav_div1 ul li a span {
+        padding-left: 7%;
+    }
+}
+               //nav delos archivos iniciasesion y contacto
+.nav_style2 {
+    @include tablet-horizontal {
+        margin-top: $margin;
+    }
+                   //  menu de navegacion del sitio
+    .nav_div1 ul {
+        @extend %flex-space-around;
+        width: 100%;
+        margin-top: $margin/2;
+        @include tablet-chica-vertical {
+            justify-content: space-between;
+        }
+
+        li {
+            width: 19%;
+            @include tablet-chica-vertical {
+                width: 22%;
+            }
+            @include mobile-horizontal {
+                width: 17%;
+            }
+            a ion-icon {
+                @include tablet-chica-vertical {
+                    display: none;
+                }
+            }
+        }
+        
+    }
+                //   decoracion del texto de la lista
+    .nav-link {
+        color: nth($text-color, 4);
+    }
+    .nav :hover {
+        color: $hover;
+    }
+    .nav :active {
+        color: $active;
+    }
+    .nav_div1 ul li a span {
+        padding-left: 7%;
+    }
+}
+
+.h1 {
+    @include tablet-horizontal {
+        display: none;
+    }
+}
+.nav_media {
+    @include tablet-vertical-min {
+        display: none;
+    }
+}
+.nav_media {
+    @include tablet-vertical-max {
+        margin-top: $margin;
+    }
+    
+    ul {
+        @extend %flex-space-around;
+    }
+}
+.nav_style1 {
+    @include tablet-vertical-max {
+        display: none;
+    }
+}
+
+header {
+    @extend %position;
+    
+    .header_div1 {
+        @include display (flex, wrap, row, center, normal, normal);
+        @include container (nth($background-color,1), none, fit-content);
+        border-radius: $border-radius*5;
+        @extend %padding;
+
+        .header_div1_div1 {
+            @include display (flex, wrap, row, normal, center, normal);
+            width: 90%;
+            @include mobile-horizontal {
+                width: 85%;
+            }
+
+            input {
+                width: 40%;
+                @extend %padding;
+                @extend %forms-input;
+                background-color: nth($background-color, 4);
+                @include mobile-horizontal {
+                    width: 60%;
+                }
+            }
+            .header_div1_lupa {
+                margin-left: 2%;
+                font-size: $font-size;
+                color: aliceblue;
+            }
+        }
+        .header_div1_div2 {
+            width: 10%;
+            font-size: $font-size;
+            @include display (flex, wrap, row, normal, space-evenly, center);
+            @include mobile-horizontal {
+               width: 15%;
+            }
+        }
+    }
+}
+footer {
+    @include container (nth($background-color,1), auto, fit-content);
+    @extend %padding;
+
+    .footer_div1 {
+        @extend %flex-space-around;
+    }
+
+    h3 {
+        color: nth($text-color, 3);
+    }
+
+    img {
+        width: 10vw;
+        height: 50%;
+        @include tablet-vertical-max {
+            width: 15vw;
+        }
+        @include tablet-chica-vertical {
+            width: 20vw;
+        }
+    }
+
+    a {
+        margin: $margin/2;
+        font-size: $font-size;
+    }
+
+    .footer_div2 {
+        margin: $margin/2;
+        color: nth($text-color, 4);
+        text-align: center;
+    }
+}

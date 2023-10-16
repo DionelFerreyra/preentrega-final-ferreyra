@@ -1,0 +1,116 @@
+
+.main_index {
+    margin-top: $margin*2;
+    @include tablet-vertical-max {
+        margin-top: 0%;
+    }
+                    // primera seccion logo mas parrafo   */
+
+    .section1_div1 p {
+        @include mobile-horizontal {
+            display: none;
+        }
+    }
+    .main_section1 img {
+        width: 100%;
+        border-radius: $border-radius;
+    }
+    .section1_div2 {
+        background-color: nth($background-color,2);
+             // texto
+        p {
+            margin: $margin;
+            padding: $padding/2;
+            @include mobile-horizontal {
+                display: none;
+            }
+        }
+    }                     // seccionde artistas
+    .section2_div1 {
+        @extend %flex-space-around;
+        background-color: nth($background-color, 1 );
+        border-radius: $border-radius;
+        padding: $padding;
+        @include tablet-chica-vertical {
+            overflow: auto;
+        }
+
+        img {
+            width: 100%;
+            height: 90px;
+            border-radius: $border-radius*5;
+            object-fit: cover;
+            @include tablet-vertical-max {
+                width: 50px;
+                height: 50px;
+            }
+            @include tablet-chica-vertical {
+                width: 40px;
+                height: 40px;
+            }
+            @include mobile-horizontal {
+                width: 30px;
+                height: 30px;
+            }
+
+        }
+        .img_6 {
+            display: none;
+        }
+        .img_7 {
+            @include tablet-vertical-max {
+                display: none;
+            }
+        }
+    }
+     //  seccion de canciones
+     .main_section3 audio {
+        width: 50%;
+        @include tablet-chica-vertical {
+            width: 100%;
+        }
+    }
+    .section3_div1 {
+        border-radius: $border-radius;
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: $margin/2;
+        @include tablet-chica-vertical {
+            flex-direction: column;
+        }
+    }
+    .section3_div1_div1 {
+        display: flex;
+        border-bottom: solid 3px;
+        border-color: rgb(37, 37, 37);
+
+        img {
+            width: 6vw;
+            height: 100%;
+            @include tablet-vertical-max {
+                width: 10vw;
+            }
+            @include tablet-chica-vertical {
+                width: 50px;
+                height: 50px;
+            }
+        }
+        
+        p {
+            margin-left: 2%;
+            width: 100%;
+        }
+    }
+    .body-index {
+       .nav_style2 {
+            display: none;
+
+            div {
+                display: none;
+            }
+            ul {
+                display: none;
+            }
+       }
+    }
+}

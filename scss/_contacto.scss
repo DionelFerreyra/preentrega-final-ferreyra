@@ -1,0 +1,41 @@
+.main__section_contacto {
+    @include tablet-chica-vertical {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    a {
+    margin-top: $margin;
+    }
+    .section1 {
+        @include tablet-chica-vertical {
+            margin-bottom: $margin*2;
+        }
+    }
+
+    iframe {
+        @include tablet-chica-vertical {
+            width: 95vw;
+        }
+        
+    }
+}
+
+
+.form_contacto {
+    background-color: nth($background-color, 4);
+    padding: $padding;
+    border-radius: $border-radius;
+
+    p {
+        @extend %titulos;
+    }
+    .btn-primaryy {
+        background-color: nth($background-color, 5);
+        border: none;
+
+        & :active {
+            color: $active;
+        }
+    }
+}

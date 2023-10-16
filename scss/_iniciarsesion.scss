@@ -1,0 +1,71 @@
+.main_sesion {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .form_sesion {
+        margin-top: $margin/2;
+        width: 45vw;
+        height: 70vh;
+        background-color: nth($background-color, 6);
+        padding: $padding*2;
+        border-radius: $border-radius;
+
+        @include tablet-horizontal {
+            width: 70vw;
+        }
+        @include tablet-vertical-max {
+            width: 80vw;
+        }
+        @include mobile-horizontal {
+            width: 90vw;
+        }
+
+        h2 {
+            @extend %titulos;
+            margin-bottom: $margin;
+            span {
+                @include tablet-vertical-max {
+                    display: none
+                }
+            }
+        }
+        .container_facebook_google {
+            @extend %flex-space-around;
+            margin-bottom: $margin;
+
+            img {
+                width: 100%;
+                height: 65px;
+            }
+        }
+        .container_input_sesion {
+            @include display (flex, wrap, column, center, normla, center);
+            input {
+                margin-bottom: $margin; 
+                padding: $padding;
+                width: 50%;
+                @extend %forms-input;
+                @include tablet-vertical-max {
+                    width: 70%;
+                }
+                @include mobile-horizontal {
+                    width: 75%;
+                }
+        
+            }
+            .boton_iniciarsesion {
+                background-color: nth($background-color, 5);
+            }
+            a {
+                color: rgb(0, 110, 255);
+                & :active {
+                    color: rgb(247, 28, 28);
+                }
+            }
+            p {
+                color: nth($text-color, 4);
+            }
+        }
+    }
+}
