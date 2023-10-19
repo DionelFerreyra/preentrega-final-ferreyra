@@ -20,7 +20,7 @@
              // texto
         p {
             margin: $margin;
-            padding: $padding/2;
+            padding: calc($padding / 2);
             @include mobile-horizontal {
                 display: none;
             }
@@ -74,7 +74,7 @@
         border-radius: $border-radius;
         display: flex;
         justify-content: space-between;
-        margin-bottom: $margin/2;
+        margin-bottom: calc($margin / 2);
         @include tablet-chica-vertical {
             flex-direction: column;
         }

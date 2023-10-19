@@ -4,7 +4,7 @@
     align-items: center;
 
     .form_sesion {
-        margin-top: $margin/2;
+        margin-top: calc($margin / 2);
         width: 45vw;
         height: 70vh;
         background-color: nth($background-color, 6);

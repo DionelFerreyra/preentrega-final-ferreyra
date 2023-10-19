@@ -8,15 +8,15 @@
     }
 }
 .main__div-h3_nosotros {
-    margin-top: $margin/2;
+    margin-top: calc($margin / 2);
 }
 .main__div__div-parrafos_nosotros {
-    padding: $padding/2;
-    margin-bottom: $padding/2;
+    padding: calc($padding / 2);
+    margin-bottom: calc($padding / 2);
 }
 .section__div2-segundaimg_nosotros img {
     width: 100%;
-    margin-top: $margin/2;
+    margin-top: calc($margin / 2);
     height: 300px;
     object-fit: cover;
     border: solid 3px;

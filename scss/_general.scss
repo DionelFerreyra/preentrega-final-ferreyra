@@ -78,7 +78,7 @@ body {
     .nav_div1 ul {
         @extend %flex-space-around;
         width: 100%;
-        margin-top: $margin/2;
+        margin-top: calc($margin / 2);
         @include tablet-chica-vertical {
             justify-content: space-between;
         }
@@ -204,12 +204,12 @@ footer {
     }
 
     a {
-        margin: $margin/2;
+        margin: calc($margin / 2);
         font-size: $font-size;
     }
 
     .footer_div2 {
-        margin: $margin/2;
+        margin: calc($margin / 2);
         color: nth($text-color, 4);
         text-align: center;
     }

@@ -1,10 +1,10 @@
-* { 
-    margin: 0%;
-    padding: 0%;
+* {
+  margin: 0%;
+  padding: 0%;
 }
 
 html {
-    font-size: 62,5%; 
+  font-size: 62, 5%;
 }
 
 .form_contacto p, .main_sesion .form_sesion h2, .h2_categorias, body h1 {
@@ -541,6 +541,7 @@ footer .footer_div2 {
 }
 .main_sesion .form_sesion .container_input_sesion .boton_iniciarsesion {
   background-color: rgb(0, 143, 98);
+  cursor: pointer;
 }
 .main_sesion .form_sesion .container_input_sesion a {
   color: rgb(0, 110, 255);

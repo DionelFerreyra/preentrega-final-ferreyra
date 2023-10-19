@@ -39,7 +39,7 @@
     width: 140px;
     padding-left: 4px;
     background-color: nth($background-color, 4);
-    border-radius: $border-radius/2;
+    border-radius: calc($border-radius / 2);
     margin-top: 3px;
     border-bottom-left-radius: 0%;
 }
