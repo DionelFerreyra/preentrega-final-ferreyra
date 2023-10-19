@@ -56,7 +56,13 @@
             }
             .boton_iniciarsesion {
                 background-color: nth($background-color, 5);
+                cursor: pointer;
+                transition: .3s;
+            }   
+            .boton_iniciarsesion :active {
+                transform: scale(0.5);
             }
+            
             a {
                 color: rgb(0, 110, 255);
                 & :active {
