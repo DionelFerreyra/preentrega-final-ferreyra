@@ -8,6 +8,7 @@ body {
         border-top-right-radius: $border-radius;
     }
     h1 {
+        color: nth($text-color, 5);
         margin: 0px;
         font-family: $family-h1;
         font-style: $font-style;
@@ -17,7 +18,7 @@ body {
 
     h2 {
         font-family: $family-h2;
-        color: nth($text-color, 2);
+        color: nth($text-color, 4);
         font-weight: bold;
     }
 
@@ -76,7 +77,7 @@ body {
         color: nth($text-color, 4);
     }
     .nav :hover {
-        color: $hover;
+        color: nth($text-color, 5);
     }
     .nav :active {
         color: $active;
@@ -89,8 +90,6 @@ body {
 .nav_style2 {
     margin-top: calc($margin * 3 / 2);
     z-index: 3;
-    -webkit-backdrop-filter: blur(8px);
-    backdrop-filter: blur(8px);
     border-radius: $border-radius*5;
     border-top-left-radius: 0px;
     @include tablet-horizontal {

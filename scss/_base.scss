@@ -1,3 +1,4 @@
+
 * { 
     margin: 0%;
     padding: 0%;
@@ -5,7 +6,10 @@
 html {
     font-size: 62,5%; 
 }
-
+@font-face {
+    font-family: Null;
+    src: url(../asets/fonts/Null.zip);
+}
 // margin, padding y border de cajas
 
 $margin: 10px;
@@ -21,7 +25,7 @@ rgba(17, 17, 17, 0.900)
 rgba(255, 237, 237, 0.535)
 rgb(205, 205, 205)
 aliceblue
-rgb(0, 143, 98)
+rgb(37, 12, 111)
 rgb(219, 236, 250);
 
 $border-color:
@@ -30,9 +34,12 @@ black;
 
 $text-color:
 rgb(0, 143, 98),
-rgb(33, 33, 33),
+rgb(0, 0, 0),
 rgb(180, 180, 180),
-rgb(94, 94, 94);
+rgb(255, 255, 255),
+rgb(37, 12, 111);
+
+
 
 // size y color de los iconos
 
@@ -54,7 +61,7 @@ $font-style: italic;
 
 $family-a: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 
-$family-h1: Verdana, Geneva, Tahoma, sans-serif;
+$family-h1: "Null", sans-serif;
 
 $family-h2: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 
