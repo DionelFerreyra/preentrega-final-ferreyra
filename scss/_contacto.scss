@@ -4,6 +4,16 @@
         flex-direction: column-reverse;
     }
 
+    .section1_div2-contacto {
+        width: 220px;
+        margin-bottom: $margin;
+        padding: $padding;
+        border-radius: $border-radius;
+        background-color: rgba(243, 243, 243, 0.354);
+        @include tablet-chica-vertical {
+            width: 90vw;
+        }
+    }
     a {
     margin-top: $margin;
     }
@@ -12,17 +22,20 @@
             margin-bottom: $margin*2;
         }
     }
+    
 
     iframe {
+        box-shadow: 0 10px 30px black;
         @include tablet-chica-vertical {
-            width: 95vw;
+            width: 90vw;
         }
-        
+    
     }
 }
 
 
 .form_contacto {
+    box-shadow: 0 10px 30px black;
     background-color: nth($background-color, 4);
     padding: $padding;
     border-radius: $border-radius;

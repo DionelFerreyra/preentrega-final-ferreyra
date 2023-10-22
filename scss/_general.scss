@@ -1,7 +1,14 @@
 body {
-    background-color: nth($background-color, 3);
+    background: linear-gradient(-45deg, #000000, #2e003a, #00141b, #001913);
+    background-size: 400% 400%;
+    animation: gradient 15s ease infinite;
+    height: 100vh;
 
+    .containerrr {
+        border-top-right-radius: $border-radius;
+    }
     h1 {
+        margin: 0px;
         font-family: $family-h1;
         font-style: $font-style;
         font-weight: bold;
@@ -36,23 +43,32 @@ body {
     }
 }
 // nav de los archivos index, categorias y nosotros
+
 .nav_style1 {
     @extend %position;
     height: 96vh;
+    background-color: rgba(243, 243, 243, 0.2);
+    box-shadow: 0 10px 30px black;
+    border: solid 1px rgba(23, 23, 23, 0.536);
+    border-top-right-radius: $border-radius;
+    border-bottom-right-radius: $border-radius;
+    border-bottom-left-radius: $border-radius;
     @include tablet-vertical-max {
         background-color: red;
     }
                          //logo del sitio en el nav
     .nav_div1 div {
-        @include display (flex, wrap, row, normal, center, center);
+        @include display (flex, nowrap, row, normal, center, center);
     }
                    //  menu de navegacion del sitio
     .nav_div1 ul {
-        @include display (flex, wrap, column, normal, normal, normal);
-        width: 100%;
+        @include display (flex, nowrap, column, normal, normal, normal);
         margin-top: 4vh;
         @include tablet-chica-vertical {
             justify-content: space-between;
+        }
+        li :hover {
+            transform: translate(0px, -4px);
         }
     }
                 //   decoracion del texto de la lista
@@ -71,6 +87,12 @@ body {
 }
                //nav delos archivos iniciasesion y contacto
 .nav_style2 {
+    margin-top: calc($margin * 3 / 2);
+    z-index: 3;
+    -webkit-backdrop-filter: blur(8px);
+    backdrop-filter: blur(8px);
+    border-radius: $border-radius*5;
+    border-top-left-radius: 0px;
     @include tablet-horizontal {
         margin-top: $margin;
     }
@@ -85,6 +107,9 @@ body {
 
         li {
             width: 19%;
+            &:hover {
+                transform: translate(0px, -4px);
+            }
             @include tablet-chica-vertical {
                 width: 22%;
             }
@@ -131,6 +156,13 @@ body {
     
     ul {
         @extend %flex-space-around;
+        flex-wrap: nowrap;
+
+        ion-icon {
+            @include mobile-horizontal {
+                display: none;
+            }
+        }
     }
 }
 .nav_style1 {
@@ -140,12 +172,18 @@ body {
 }
 
 header {
+    align-items: center;
     @extend %position;
+    border-radius: $border-radius*5;
+    border-top-right-radius: 0px;
+    box-shadow: 0 2px 10px black;
+    z-index: 1;
     
     .header_div1 {
         @include display (flex, wrap, row, center, normal, normal);
         @include container (nth($background-color,1), none, fit-content);
         border-radius: $border-radius*5;
+        border-top-right-radius: 0px;
         @extend %padding;
 
         .header_div1_div1 {
@@ -173,7 +211,7 @@ header {
         .header_div1_div2 {
             width: 10%;
             font-size: $font-size;
-            @include display (flex, wrap, row, normal, space-evenly, center);
+            @include display (flex, nowrap, row, normal, space-evenly, center);
             @include mobile-horizontal {
                width: 15%;
             }
@@ -186,6 +224,9 @@ header {
 footer {
     @include container (nth($background-color,1), auto, fit-content);
     @extend %padding;
+    z-index: 1;
+    box-shadow: 0 10px 30px black;
+    border: solid 1px rgba(255, 255, 255, 0.251);
 
     .footer_div1 {
         @extend %flex-space-around;
@@ -215,5 +256,9 @@ footer {
         margin: calc($margin / 2);
         color: nth($text-color, 4);
         text-align: center;
+    }
+    .footer_div1_div3_div1 {
+        display: flex;
+        align-content: center;
     }
 }
