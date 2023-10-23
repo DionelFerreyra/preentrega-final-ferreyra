@@ -44,7 +44,7 @@
         @extend %titulos;
     }
     .btn-primaryy {
-        background-color: nth($background-color, 5);
+        background-color: $boton-color;
         border: none;
 
         & :active {

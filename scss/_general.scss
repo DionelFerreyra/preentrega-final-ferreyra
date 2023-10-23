@@ -8,7 +8,7 @@ body {
         border-top-right-radius: $border-radius;
     }
     h1 {
-        color: nth($text-color, 5);
+        color: nth($text-color, 1);
         margin: 0px;
         font-family: $family-h1;
         font-style: $font-style;
@@ -25,6 +25,8 @@ body {
     h3 {
         font-family: $family-h3;
         color: nth($text-color, 2);
+        border-bottom: solid 1px;
+        border-color: black;
     }
 
     p {

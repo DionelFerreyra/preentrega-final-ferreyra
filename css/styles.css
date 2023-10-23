@@ -8,8 +8,8 @@ html {
 }
 
 @font-face {
-  font-family: Null;
-  src: url(../asets/fonts/Null.zip);
+  font-family: robofan;
+  src: url(../asets/fonts/robofan.zip);
 }
 .form_contacto p, .main_sesion .form_sesion h2, .h2_categorias, body h1 {
   text-align: center;
@@ -94,7 +94,7 @@ body .containerrr {
   border-top-right-radius: 10px;
 }
 body h1 {
-  color: rgb(37, 12, 111);
+  color: rgb(0, 143, 98);
   margin: 0px;
   font-family: "Null", sans-serif;
   font-style: italic;
@@ -108,6 +108,8 @@ body h2 {
 body h3 {
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
   color: rgb(0, 0, 0);
+  border-bottom: solid 1px;
+  border-color: black;
 }
 body p {
   font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
@@ -634,7 +636,6 @@ footer .footer_div1_div3_div1 {
 .main_sesion .form_sesion {
   margin-top: 5px;
   width: 45vw;
-  height: 70vh;
   box-shadow: 0 10px 30px black;
   background-color: rgb(219, 236, 250);
   padding: 20px;
@@ -653,7 +654,11 @@ footer .footer_div1_div3_div1 {
 @media screen and (max-width: 480px) {
   .main_sesion .form_sesion {
     width: 90vw;
-    height: 60vh;
+  }
+}
+@media screen and (max-width: 480px) {
+  .main_sesion .form_sesion {
+    height: 55vh;
   }
 }
 .main_sesion .form_sesion h2 {
@@ -695,7 +700,7 @@ footer .footer_div1_div3_div1 {
   }
 }
 .main_sesion .form_sesion .container_input_sesion .boton_iniciarsesion {
-  background-color: rgb(37, 12, 111);
+  background-color: rgb(0, 143, 98);
 }
 .main_sesion .form_sesion .container_input_sesion a {
   color: rgb(0, 110, 255);
@@ -793,7 +798,7 @@ footer .footer_div1_div3_div1 {
   border-radius: 10px;
 }
 .form_contacto .btn-primaryy {
-  background-color: rgb(37, 12, 111);
+  background-color: rgb(0, 143, 98);
   border: none;
 }
 .form_contacto .btn-primaryy :active {

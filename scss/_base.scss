@@ -7,8 +7,8 @@ html {
     font-size: 62,5%; 
 }
 @font-face {
-    font-family: Null;
-    src: url(../asets/fonts/Null.zip);
+    font-family: robofan;
+    src: url(../asets/fonts/robofan.zip);
 }
 // margin, padding y border de cajas
 
@@ -38,6 +38,9 @@ rgb(0, 0, 0),
 rgb(180, 180, 180),
 rgb(255, 255, 255),
 rgb(37, 12, 111);
+
+$boton-color:
+rgb(0, 143, 98);
 
 
 

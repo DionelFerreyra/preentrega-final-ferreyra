@@ -6,7 +6,6 @@
     .form_sesion {
         margin-top: calc($margin / 2);
         width: 45vw;
-        height: 70vh;
         box-shadow: 0 10px 30px black;
         background-color: nth($background-color, 6);
         padding: $padding*2;
@@ -20,7 +19,9 @@
         }
         @include mobile-horizontal {
             width: 90vw;
-            height: 60vh;
+        }
+        @include mobile-horizontal {
+            height: 55vh;
         }
 
         h2 {
@@ -57,7 +58,7 @@
         
             }
             .boton_iniciarsesion {
-                background-color: nth($background-color, 5);
+                background-color: $boton-color;
             }
             
             a {
