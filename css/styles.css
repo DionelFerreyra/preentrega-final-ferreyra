@@ -656,11 +656,6 @@ footer .footer_div1_div3_div1 {
     width: 90vw;
   }
 }
-@media screen and (max-width: 480px) {
-  .main_sesion .form_sesion {
-    height: 55vh;
-  }
-}
 .main_sesion .form_sesion h2 {
   margin-bottom: 10px;
 }
@@ -707,9 +702,6 @@ footer .footer_div1_div3_div1 {
 }
 .main_sesion .form_sesion .container_input_sesion a :active {
   color: rgb(247, 28, 28);
-}
-.main_sesion .form_sesion .container_input_sesion p {
-  color: rgb(255, 255, 255);
 }
 
 .main_nosotros {

@@ -20,9 +20,6 @@
         @include mobile-horizontal {
             width: 90vw;
         }
-        @include mobile-horizontal {
-            height: 55vh;
-        }
 
         h2 {
             @extend %titulos;
@@ -66,9 +63,6 @@
                 & :active {
                     color: rgb(247, 28, 28);
                 }
-            }
-            p {
-                color: nth($text-color, 4);
             }
         }
     }
