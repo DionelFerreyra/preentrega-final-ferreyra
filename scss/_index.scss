@@ -97,6 +97,7 @@
             display: none;
         }
         .img_7 {
+            width: 90px;
             @include tablet-vertical-max {
                 display: none;
             }

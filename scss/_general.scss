@@ -1,5 +1,5 @@
 body {
-    background: linear-gradient(-45deg, #000000, #2e003a, #00141b, #001913);
+    background: linear-gradient(-45deg, #000000, #000000, #00141b, #001913);
     background-size: 400% 400%;
     animation: gradient 15s ease infinite;
     height: 100vh;
@@ -227,7 +227,7 @@ footer {
     @extend %padding;
     z-index: 1;
     box-shadow: 0 10px 30px black;
-    border: solid 1px rgba(255, 255, 255, 0.251);
+    border-top: solid 1px rgba(255, 255, 255, 0.251);
 
     .footer_div1 {
         @extend %flex-space-around;
