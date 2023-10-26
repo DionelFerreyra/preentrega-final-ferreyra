@@ -4,59 +4,47 @@
     @include tablet-vertical-max {
         margin-top: 0%;
     }
-                    // primera seccion logo mas parrafo   */
+                    // primera seccion carousel   */
 
-    .section1_div1 p {
-        @include mobile-horizontal {
-            display: none;
-        }
-    }
-    .main_section1 {
-        background-color: rgba(243, 243, 243, 0.354);
-        border-bottom: solid 1px rgba(23, 23, 23, 0.536);
-        border-radius: $border-radius;
-        border-bottom-left-radius: 0px;
-        .main_section1_div1 {
-            text-align: center;
-            width: 100%;
+    .carousel-item {
+        img {
             height: 200px;
+            object-fit: cover;
             border-radius: $border-radius;
-            background-color: rgb(37, 12, 111);
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            @include mobile-horizontal {
-                height: 100px;
+        }
+        .carousel-caption {
+            right: auto;
+            left: 13%;
+        }
+        h3 {
+            display: inline-block;
+            position: relative;
+            border-bottom: none;
+            font-size: 55px;
+            font-weight: 520;
+            @include tablet-chica-vertical {
+                font-size: 40px;
             }
-
-            h2 {
-                font-family: Null, sans-serif;
-                font-weight: bold;
-                font-size: 500%;
-
-            @include mobile-horizontal {
-                font-size: 400%;
-            }
-            @include mobile-vertical {
-                font-size: xx-large;
-            }
-            }
+        }
+        & ::after {
+            content: "";
+            position: absolute;
+            width: 100%;
+            height: 1px;
+            bottom: 0;
+            left: 0;
+            background-color: black;
+            transform: scaleX(0);
+            transform-origin: bottom;
+            transition: 0.6s ease-out;
+        }
+        & :hover ::after {
+            transform: scale(1);
+            transform-origin: bottom;
         }
     }
-    .section1_div2 {
-        background-color: nth($background-color,2);
-        border-radius: 10px;
-        border-bottom-right-radius: 0px;
-        border-top-left-radius: 0px;
-             // texto
-        p {
-            margin: $margin;
-            padding: calc($padding / 2);
-            @include mobile-horizontal {
-                display: none;
-            }
-        }
-    }                     // seccionde artistas
+    
+                    // seccionde artistas
     .main_section2 {
         margin-top: $margin;
         box-shadow: 0 10px 30px black;
