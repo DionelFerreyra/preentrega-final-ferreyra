@@ -49,6 +49,8 @@ body {
 
 .nav_style1 {
     @extend %position;
+    background-color: nth($background-color, 1 );
+    border-radius: $border-radius;
     height: 96vh;
                          //logo del sitio en el nav
     .nav_div1 div {

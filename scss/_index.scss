@@ -5,7 +5,10 @@
         margin-top: 0%;
     }
                     // primera seccion carousel   */
-
+    .carousel {
+        border-radius: $border-radius;
+        overflow: hidden;
+    }
     .carousel-item {
         img {
             height: 200px;
@@ -19,7 +22,6 @@
         h3 {
             display: inline-block;
             position: relative;
-            border-bottom: none;
             font-size: 55px;
             font-weight: 520;
             @include tablet-chica-vertical {
@@ -35,12 +37,12 @@
             left: 0;
             background-color: black;
             transform: scaleX(0);
-            transform-origin: bottom;
-            transition: 0.6s ease-out;
+            transform-origin: bottom left;
+            transition: transform 0.6s ease-out;
         }
         & :hover ::after {
             transform: scale(1);
-            transform-origin: bottom;
+            transform-origin: bottom left;
         }
     }
     

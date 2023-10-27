@@ -129,6 +129,8 @@ body a :active {
 }
 
 .nav_style1 {
+  background-color: rgba(17, 17, 17, 0.9);
+  border-radius: 10px;
   height: 96vh;
 }
 .nav_style1 .nav_div1 div {
@@ -364,6 +366,10 @@ footer .footer_div1_div3_div1 {
     margin-top: 0%;
   }
 }
+.main_index .carousel {
+  border-radius: 10px;
+  overflow: hidden;
+}
 .main_index .carousel-item img {
   height: 200px;
   object-fit: cover;
@@ -376,7 +382,6 @@ footer .footer_div1_div3_div1 {
 .main_index .carousel-item h3 {
   display: inline-block;
   position: relative;
-  border-bottom: none;
   font-size: 55px;
   font-weight: 520;
 }
@@ -394,12 +399,12 @@ footer .footer_div1_div3_div1 {
   left: 0;
   background-color: black;
   transform: scaleX(0);
-  transform-origin: bottom;
-  transition: 0.6s ease-out;
+  transform-origin: bottom left;
+  transition: transform 0.6s ease-out;
 }
 .main_index .carousel-item :hover ::after {
   transform: scale(1);
-  transform-origin: bottom;
+  transform-origin: bottom left;
 }
 .main_index .main_section2 {
   margin-top: 10px;
