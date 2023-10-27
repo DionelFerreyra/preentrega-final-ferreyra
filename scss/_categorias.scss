@@ -37,14 +37,14 @@
 }
 .container-img-categorias {
     margin-bottom: $margin;
-    width: 150px;
+    width: 160px;
     padding: calc($padding / 2);
     background-color: rgba(243, 243, 243, 0.354);
     box-shadow: 0 10px 30px rgb(0, 0, 0);
     border-radius: $border-radius;
     img {
-        width: 140px;
-        height: 140px;
+        width: 150px;
+        height: 150px;
         border-radius: $border-radius;
         object-fit: cover;
         border: solid 5px;
@@ -53,7 +53,7 @@
     }
 }
 .seccion_categorias div div p {
-    width: 140px;
+    width: 150px;
     padding-left: 4px;
     background-color: nth($background-color, 4);
     border-radius: calc($border-radius / 2);
