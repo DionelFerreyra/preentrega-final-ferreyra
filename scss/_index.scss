@@ -101,10 +101,7 @@
         box-shadow: 0 10px 30px black;
         border-radius: $border-radius;
         border-bottom-left-radius: 0px;
-
-        .container-canciones {
-            display: flex;
-        }
+        
         h2 {
             margin-left: calc($margin / 2);
         }
@@ -144,7 +141,7 @@
         }
 
         img {
-            width: 150px;
+            width: 100%;
             height: 150px;
             border-radius: calc($border-radius / 2);
             object-fit: cover;

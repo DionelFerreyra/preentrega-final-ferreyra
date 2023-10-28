@@ -1,54 +1,99 @@
 .main__section_contacto {
+    margin-top: calc($margin * 2);
+    display: flex;
+    justify-content: center;
     @include tablet-chica-vertical {
-        display: flex;
-        flex-direction: column-reverse;
+        flex-direction: column;
+        align-items: center;
     }
+    .form_contacto {
+        padding: calc($padding * 2);
+        width: 500px;
+        border: 2px solid transparent;
+        border-radius: $border-radius;
+        box-shadow: 0 15px 35px black;
+        background: linear-gradient(#212121, #212121) padding-box,
+            linear-gradient(145deg, transparent 35%,rgb(0, 143, 98), #e81cff,) border-box;
+        background-size: 200% 100%;
+        animation: gradient 5s ease infinite;
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        h2 {
+            @extend %titulos;
+        }
+        .form-label {
+            color: rgb(0, 143, 98);
+        }
+        .form-control {
+            border: none;
+            border-radius: 0px;
+            border-bottom: solid 1px;
+            border-color: rgb(0, 143, 98);
+            color: white;
+            background-color: #1f1f1f;
+            outline-color: rgb(0, 143, 98);
 
-    .section1_div2-contacto {
-        width: 220px;
-        margin-bottom: $margin;
+            &::placeholder {
+                color: #8c8c8c;
+            }
+        }
+        .form-text {
+            color: rgb(215, 215, 215);
+        }
+        .container-button-icon-redes {
+            display: flex;
+            justify-content: space-between;
+        }
+        .btn-primaryy {
+            background-color: $boton-color;
+            border: none;
+
+            & :active {
+                color: $active;
+            }
+        }
+        a {
+            font-size: $font-size
+        }
+    }
+    .section1_div1-container {
+        @extend %flex-column;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        align-content: center;
+        width: 235px;
+        margin: calc($margin * 2) 0px;
         padding: $padding;
         border-radius: $border-radius;
-        background-color: rgba(243, 243, 243, 0.354);
+        background:  linear-gradient(rgba(243, 243, 243, 0.354), #353535);
         @include tablet-chica-vertical {
             width: 90vw;
         }
-    }
-    a {
-    margin-top: $margin;
-    }
-    .section1 {
-        @include tablet-chica-vertical {
-            margin-bottom: $margin*2;
+        h3 {
+            font-size: large;
+            font-weight: bold;
+            color: rgb(0, 143, 98);
+            border-color: #8c8c8c;
         }
-    }
-    
+        a {
+            display: flex;
+            flex-wrap: nowrap;
+            margin-top: calc($margin * 2);
+            color: #cccccc;
 
-    iframe {
-        box-shadow: 0 10px 30px black;
-        @include tablet-chica-vertical {
-            width: 90vw;
+            span {
+                margin-left: $margin;
+                & :hover {
+                    color: rgb(0, 143, 98);
+                }
+            }
         }
-    
+        iframe {
+            display: flex;
+            @include tablet-chica-vertical {
+                width: 85vw;
+            }
+        }
     }
 }
 
 
-.form_contacto {
-    box-shadow: 0 10px 30px black;
-    background-color: nth($background-color, 4);
-    padding: $padding;
-    border-radius: $border-radius;
-
-    p {
-        @extend %titulos;
-    }
-    .btn-primaryy {
-        background-color: $boton-color;
-        border: none;
-
-        & :active {
-            color: $active;
-        }
-    }
-}

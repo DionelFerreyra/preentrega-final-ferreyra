@@ -12,27 +12,13 @@
     <title>Contacto - Xsound</title>
     <link rel="stylesheet" href="../css/styles.css">
 </head>
-<body>
-    <div class="container_contacto container-fluid">
-        <header class="row">
-            <div class="col-2 h1">
-                <a href="../index.html"><h1>Xsound</h1></a>
-            </div>
-            <div class="header_div1 col-lg-10">
-                <div class="header_div1_div1">
-                    <input type="text" placeholder="buscar" class="iconbuscarr">
-                    <div class="header_div1_lupa">
-                        <ion-icon name="search-outline" class="iconheader" ></ion-icon>
-                    </div>
-                </div>
-                <div class="header_div1_div2">
-                    <a href=""><ion-icon name="notifications-outline" class="iconheader" id="iconotification"></ion-icon></a>
-                    <a href="./iniciarsesion.html"><ion-icon name="person-outline" class="iconheader"></ion-icon></a>
-                </div>
-            </div>
-        </header>
-        <nav class="nav_style2">
+<body class="container-fluid">
+    <div class="row">
+        <nav class="nav_style1 col-md-2">
             <div class="nav_div1 logonav">
+                <div>
+                    <a href="../index.html"><h1>Xsound</h1></a>
+                </div>
                 <ul class="nav nav-underline">
                     <li class="nav-item">
                         <a class="nav-link" href="../index.html">
@@ -57,49 +43,98 @@
                 </ul>
             </div>
         </nav>
-        <main class="container-fluid">
-            <section class="row mt-1 main__section_contacto ">
-                <div class="col-sm-4 d-flex flex-column justify-content-center aling-content-sm-center ">
-                    <div class="section1_div2-contacto">
-                        <div>
-                            <a href=""><ion-icon name="call-outline"></ion-icon>123-456-789</a>
-                        </div>
-                        <div>
-                            <a href=""><ion-icon name="mail-outline"></ion-icon> somosxsound@gmail.com</a>
-                        </div>
-                        <div>
-                            <a href="https://www.google.com/maps/place/Campana,+Provincia+de+Buenos+Aires/@-34.2303934,-59.1211466,11z/data=!3m1!4b1!4m6!3m5!1s0x95bb723060430bad:0xaa31c9f685c849bf!8m2!3d-34.1633346!4d-58.9592643!16zL20vMGI3cHFt?entry=ttu" target="_blank"><ion-icon name="map-outline"></ion-icon> ciudad, país</a>
+        <div class="col-md-10">
+            <header>
+                <div class="header_div1">
+                    <div class="header_div1_div1">
+                        <input type="text" placeholder="buscar" class="iconbuscarr">
+                        <div class="header_div1_lupa">
+                            <ion-icon name="search-outline" class="iconheader" ></ion-icon>
                         </div>
                     </div>
-                    <div class="iframe">
-                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d211117.51289329946!2d-59.121146593085506!3d-34.23039335574286!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bb723060430bad%3A0xaa31c9f685c849bf!2sCampana%2C%20Provincia%20de%20Buenos%20Aires!5e0!3m2!1ses!2sar!4v1696183501766!5m2!1ses!2sar" width="183" height="200" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    <div class="header_div1_div2">
+                        <a href=""><ion-icon name="notifications-outline" class="iconheader" id="iconotification"></ion-icon></a>
+                        <a href="iniciarsesion.html"><ion-icon name="person-outline" class="iconheader"></ion-icon></a>
                     </div>
                 </div>
-                <form class="col-sm-8 col-md-6 section1 form_contacto">
-                    <div class="row">
-                        <p class="text-center mt-1">Contactanos</p>
-                        <div class="col">
-                          <label for="nombre" class="fomr-label">Nombre</label>
-                          <input type="text" class="form-control" aria-label="First name">
+            </header>
+            <nav class="nav_style2 nav_media">
+                <div class="nav_div1 logonav">
+                    <ul class="nav nav-underline">
+                        <li class="nav-item">
+                            <a class="nav-link" href="../index.html">
+                                <ion-icon name="home-outline"></ion-icon><span>Inicio</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="categorias.html">
+                                <ion-icon name="grid-outline"></ion-icon><span>Categorias</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="nosotros.html">
+                                <ion-icon name="people-circle-outline"></ion-icon><span>Nosotros</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#" target="_blank">
+                                <ion-icon name="mail-open-outline"></ion-icon><span>Contacto</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+            <main>
+                <section class="main__section_contacto">
+                    <form class="form_contacto">
+                        <div class="row">
+                            <h2 class="text-center mt-1">Contactanos</h2>
+                            <div class="">
+                            <label for="nombre" class="form-label">Nombre</label>
+                            <input type="text" class="form-control" aria-label="First name" placeholder="Ingresa tu nombre">
+                            </div>
+                            <div class="col">
+                            <label for="apellido" class="form-label">Apellido</label>
+                            <input type="text" class="form-control" aria-label="Last name" placeholder="Ingresa tu apellido">
+                            </div>
                         </div>
-                        <div class="col">
-                          <label for="apellido" class="fomr-label">Apellido</label>
-                          <input type="text" class="form-control" aria-label="Last name">
+                        <div class="mb-3">
+                            <label for="exampleInputEmail1" class="form-label">Email</label>
+                            <input type="email" class="form-control" id="email" aria-describedby="emailHelp" placeholder="Ingresa tu email">
+                            <div id="emailHelp" class="form-text">No compartiremos tu Email con nadie</div>
                         </div>
+                        <div class="mb-3">
+                            <label for="deajnos tu mensaje" class="form-label">Dejanos tu mensaje</label>
+                            <textarea class="form-control" id="dejanos tu mensaje" rows="3" placeholder="Escribe aqui..."></textarea>
+                        </div>
+                        <div class="container-button-icon-redes">
+                            <div>
+                                <button type="submit" class="btn btn-primaryy">Enviar</button>
+                            </div>
+                            <div>
+                                <a href="" class="logofacebook facebook"><ion-icon name="logo-facebook" class="facebook"></ion-icon></a>
+                                <a href="" class="logoinstagram instagram"><ion-icon name="logo-instagram"></ion-icon></a>
+                                <a href="" class="logotwitter twitter"><ion-icon name="logo-twitter"></ion-icon></a>
+                                <a href="" class="logo-youtube youtube"><ion-icon name="logo-youtube"></ion-icon></a>
+                            </div>
+                        </div>
+                    </form>
+                    <div class="section1_div1-container">
+                        <H3>Medios de contacto</H3>
+                        <div>
+                            <a href=""><ion-icon name="call-outline"></ion-icon><span>123-456-789</span></a>
+                        </div>
+                        <div>
+                            <a href=""><ion-icon name="mail-outline"></ion-icon><span>Somosxsound@gmail.com</span></a>
+                        </div>
+                        <div>
+                            <a href="https://www.google.com/maps/place/Campana,+Provincia+de+Buenos+Aires/@-34.2303934,-59.1211466,11z/data=!3m1!4b1!4m6!3m5!1s0x95bb723060430bad:0xaa31c9f685c849bf!8m2!3d-34.1633346!4d-58.9592643!16zL20vMGI3cHFt?entry=ttu" target="_blank"><ion-icon name="map-outline"></ion-icon><span>Ciudad, País</span></a>
+                        </div>
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d211117.51289329946!2d-59.121146593085506!3d-34.23039335574286!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bb723060430bad%3A0xaa31c9f685c849bf!2sCampana%2C%20Provincia%20de%20Buenos%20Aires!5e0!3m2!1ses!2sar!4v1696183501766!5m2!1ses!2sar" width="200" height="200" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                     </div>
-                    <div class="mb-3">
-                        <label for="exampleInputEmail1" class="form-label">Email address</label>
-                        <input type="email" class="form-control" id="email" aria-describedby="emailHelp" placeholder="...">
-                        <div id="emailHelp" class="form-text">no compartiremos tu email con nadie</div>
-                    </div>
-                    <div class="mb-3">
-                        <label for="deajnos tu mensaje" class="form-label">Dejanos tu mensaje</label>
-                        <textarea class="form-control" id="dejanos tu mensaje" rows="3" placeholder="Escribe aqui"></textarea>
-                    </div>
-                    <button type="submit" class="btn btn-primaryy">Enviar</button>
-                </form>
-            </section>
-        </main>
+                </section>
+            </main>
+        </div>
     </div>
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
