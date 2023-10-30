@@ -22,7 +22,7 @@ header, .nav_style1 {
   top: 2%;
 }
 
-.main__section_contacto .section1_div1-container {
+.main__section_contacto .section1_div1-container, .main_sesion .form {
   display: flex;
   flex-direction: column;
 }
@@ -33,7 +33,7 @@ header, .nav_style1 {
 }
 
 header .header_div1 .header_div1_div1 input {
-  outline-color: rgb(0, 143, 98);
+  outline-color: rgb(74, 255, 198);
   border: none;
   border-radius: 50px;
 }
@@ -129,7 +129,7 @@ body a :hover {
   color: rgb(0, 143, 98);
 }
 body a :active {
-  color: rgb(0, 143, 98);
+  color: rgb(74, 255, 198);
 }
 
 .nav_style1 {
@@ -169,7 +169,7 @@ body a :active {
   color: rgb(37, 12, 111);
 }
 .nav_style1 .nav :active {
-  color: rgb(0, 143, 98);
+  color: rgb(74, 255, 198);
 }
 .nav_style1 .nav_div1 ul li a span {
   padding-left: 7%;
@@ -221,7 +221,7 @@ body a :active {
   color: rgb(0, 143, 98);
 }
 .nav_style2 .nav :active {
-  color: rgb(0, 143, 98);
+  color: rgb(74, 255, 198);
 }
 .nav_style2 .nav_div1 ul li a span {
   padding-left: 7%;
@@ -526,8 +526,6 @@ footer .footer_div1_div3_div1 {
 }
 
 .div_h2_categorias {
-  background-image: url(../img/banner2.jpg);
-  background-size: cover;
   border: solid 3px;
   border-color: rgba(17, 17, 17, 0.9);
   border-radius: 10px;
@@ -606,25 +604,20 @@ footer .footer_div1_div3_div1 {
   border-radius: 10px;
   box-sizing: border-box;
   font-size: 14px;
-  background: linear-gradient(#212121, #212121) padding-box, linear-gradient(145deg, transparent 35%, rgb(0, 143, 98), #e81cff) border-box;
+  background: linear-gradient(rgb(33, 33, 33), rgb(33, 33, 33)) padding-box, linear-gradient(145deg, transparent 35%, rgb(0, 143, 98), #e81cff) border-box;
   background-size: 200% 100%;
   gap: 4px;
-  display: flex;
-  flex-direction: column;
   animation: gradient 5s ease infinite;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 }
 .main_sesion .form h2 {
   color: rgb(0, 143, 98);
 }
-.main_sesion .form button {
-  align-self: flex-end;
-}
-.main_sesion .flex-column label {
+.main_sesion .form .form_div-label label {
   color: rgb(0, 143, 98);
   font-weight: 600;
 }
-.main_sesion .inputForm {
+.main_sesion .form .inputForm {
   border-bottom: 1.5px solid rgb(0, 143, 98);
   height: 50px;
   display: flex;
@@ -632,7 +625,7 @@ footer .footer_div1_div3_div1 {
   padding-left: 10px;
   transition: 0.2s ease-in-out;
 }
-.main_sesion .input {
+.main_sesion .form .input {
   color: white;
   background: none;
   margin-left: 10px;
@@ -641,25 +634,25 @@ footer .footer_div1_div3_div1 {
   width: 85%;
   height: 100%;
 }
-.main_sesion .input:focus {
+.main_sesion .form .input:focus {
   outline: none;
 }
-.main_sesion .inputForm:focus-within {
-  border-bottom: 1.5px solid #4affc6;
+.main_sesion .form .inputForm:focus-within {
+  border-bottom: 1.5px solid rgb(74, 255, 198);
 }
-.main_sesion .flex-row {
+.main_sesion .form .input-checkout {
   display: flex;
   flex-direction: row;
   align-items: center;
   gap: 10px;
   justify-content: space-between;
 }
-.main_sesion .flex-row > div > label {
+.main_sesion .form .input-checkout div label {
   font-size: 14px;
   color: rgb(196, 196, 196);
   font-weight: 400;
 }
-.main_sesion .span {
+.main_sesion .form .span {
   padding-left: 5px;
   font-size: 14px;
   margin-left: 5px;
@@ -667,12 +660,15 @@ footer .footer_div1_div3_div1 {
   font-weight: 500;
   cursor: pointer;
 }
-.main_sesion .span:hover {
-  color: #27b689;
+.main_sesion .form .span:hover {
+  color: rgb(39, 182, 137);
 }
-.main_sesion .button-submit {
+.main_sesion .form .form button {
+  align-self: flex-end;
+}
+.main_sesion .form .button-submit {
   margin: 20px 0 10px 0;
-  background-color: #151717;
+  background-color: rgb(21, 23, 23);
   border: none;
   color: rgb(0, 143, 98);
   font-size: 15px;
@@ -682,18 +678,18 @@ footer .footer_div1_div3_div1 {
   width: 100%;
   cursor: pointer;
 }
-.main_sesion .button-submit:hover {
+.main_sesion .form .button-submit:hover {
   border: 1px solid rgb(0, 143, 98);
-  background-color: #313131;
+  background-color: rgb(49, 49, 49);
 }
-.main_sesion .p {
+.main_sesion .form .p {
   text-align: center;
   color: rgb(196, 196, 196);
   font-size: 14px;
   margin: 5px 0;
 }
-.main_sesion .btn {
-  color: #ededef;
+.main_sesion .form .btn {
+  color: rgb(237, 237, 239);
   margin-top: 10px;
   width: 100%;
   height: 50px;
@@ -702,15 +698,15 @@ footer .footer_div1_div3_div1 {
   justify-content: center;
   align-items: center;
   font-weight: 500;
-  background-color: #151717;
+  background-color: rgb(21, 23, 23);
   cursor: pointer;
   transition: 0.2s ease-in-out;
 }
-.main_sesion .btn:hover {
+.main_sesion .form .btn:hover {
   border: 1px solid rgb(0, 143, 98);
 }
-.main_sesion .btn:hover {
-  color: #ededef;
+.main_sesion .form .btn:hover {
+  color: rgb(237, 237, 239);
 }
 
 .main_nosotros {
@@ -774,7 +770,7 @@ footer .footer_div1_div3_div1 {
   border: 2px solid transparent;
   border-radius: 10px;
   box-shadow: 0 15px 35px black;
-  background: linear-gradient(#212121, #212121) padding-box, linear-gradient(145deg, transparent 35%, rgb(0, 143, 98), #e81cff) border-box;
+  background: linear-gradient(rgb(33, 33, 33), rgb(33, 33, 33)) padding-box, linear-gradient(145deg, transparent 35%, rgb(0, 143, 98), #e81cff) border-box;
   background-size: 200% 100%;
   animation: gradient 5s ease infinite;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
@@ -787,8 +783,8 @@ footer .footer_div1_div3_div1 {
   border-radius: 0px;
   border-bottom: solid 1px;
   border-color: rgb(0, 143, 98);
-  color: white;
-  background-color: #1f1f1f;
+  color: rgb(255, 255, 255);
+  background-color: rgb(31, 31, 31);
   outline-color: rgb(0, 143, 98);
 }
 .main__section_contacto .form_contacto .form-control::placeholder {
@@ -806,7 +802,7 @@ footer .footer_div1_div3_div1 {
   border: none;
 }
 .main__section_contacto .form_contacto .btn-primaryy :active {
-  color: rgb(0, 143, 98);
+  color: rgb(74, 255, 198);
 }
 .main__section_contacto .form_contacto a {
   font-size: 20px;

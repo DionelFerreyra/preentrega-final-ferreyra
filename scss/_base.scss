@@ -25,12 +25,12 @@ rgba(17, 17, 17, 0.900)
 rgba(255, 237, 237, 0.535)
 rgb(205, 205, 205)
 aliceblue
-rgb(37, 12, 111)
 rgb(219, 236, 250);
 
 $border-color:
 aliceblue
-black;
+black
+rgb(0, 143, 98);
 
 $text-color:
 rgb(0, 143, 98),
@@ -50,11 +50,11 @@ $font-size: 20px;
 
 $color-a:rgb(0, 143, 98);
 
-$active: rgb(0, 143, 98);
+$active: rgb(74, 255, 198);
 
 $hover: rgb(0, 143, 98);
 
-$color-outline:rgb(0, 143, 98);
+$color-outline:rgb(74, 255, 198);
 
 // size fuente y estilo de text
 

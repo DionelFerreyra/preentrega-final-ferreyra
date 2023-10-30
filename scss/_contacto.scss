@@ -6,43 +6,57 @@
         flex-direction: column;
         align-items: center;
     }
+
+    // estilo del form de contacto
     .form_contacto {
         padding: calc($padding * 2);
         width: 500px;
         border: 2px solid transparent;
         border-radius: $border-radius;
         box-shadow: 0 15px 35px black;
-        background: linear-gradient(#212121, #212121) padding-box,
+        background: linear-gradient(rgb(33, 33, 33), rgb(33, 33, 33)) padding-box,
             linear-gradient(145deg, transparent 35%,rgb(0, 143, 98), #e81cff,) border-box;
         background-size: 200% 100%;
         animation: gradient 5s ease infinite;
         font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        
+        // h2 contacto
         h2 {
             @extend %titulos;
         }
+
+        // color de los labels
         .form-label {
-            color: rgb(0, 143, 98);
+            color: nth($text-color, 1);
         }
+
+        // inputs del form
         .form-control {
             border: none;
             border-radius: 0px;
             border-bottom: solid 1px;
             border-color: rgb(0, 143, 98);
-            color: white;
-            background-color: #1f1f1f;
+            color: nth($text-color, 4);
+            background-color: rgb(31, 31, 31);
             outline-color: rgb(0, 143, 98);
 
             &::placeholder {
                 color: #8c8c8c;
             }
         }
+
+        // color de textos del form
         .form-text {
             color: rgb(215, 215, 215);
         }
+
+        //contenedosr del boton enviar e iconos de redes
         .container-button-icon-redes {
             display: flex;
             justify-content: space-between;
         }
+
+         //boton enviar
         .btn-primaryy {
             background-color: $boton-color;
             border: none;
@@ -55,6 +69,8 @@
             font-size: $font-size
         }
     }
+
+      // seccion medios de contacto
     .section1_div1-container {
         @extend %flex-column;
         flex-wrap: wrap;
@@ -68,12 +84,15 @@
         @include tablet-chica-vertical {
             width: 90vw;
         }
+         // h3 medios de contacto
         h3 {
             font-size: large;
             font-weight: bold;
             color: rgb(0, 143, 98);
             border-color: #8c8c8c;
         }
+         
+        // contactos
         a {
             display: flex;
             flex-wrap: nowrap;
@@ -87,6 +106,8 @@
                 }
             }
         }
+
+        //  mapa
         iframe {
             display: flex;
             @include tablet-chica-vertical {
