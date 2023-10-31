@@ -1,40 +1,67 @@
 .main_nosotros {
     margin-top: calc($margin * 2);
     margin-bottom: $margin;
-}
-.main__div-primeraimg_nosotros img {
-    width: 100%;
-    height: 150px;
-    object-fit: cover;
-    
-    @include tablet-vertical-max {
-        margin-top: 0%;
-    }
-}
-.main__div-h3_nosotros {
-    width: 70%;
-    margin-top: $margin;
-    padding: $padding;
-    border-radius: $border-radius;
-    border-top-left-radius: 0px;
-    background-color: rgba(243, 243, 243, 0.354);
-}
-
-.section__div2-segundaimg_nosotros {
-    text-align: end;
-
-    img {
-        width: 70%;
-        margin-top: calc($margin / 2);
-        height: 300px;
-        object-fit: cover;
+     
+    // contenedor h2 music is life
+    .div_h2_nosotros {
+        margin-top: $margin*2;
+        margin-bottom: $margin*2;
         border: solid 3px;
-        border-color: aliceblue;
+        border-color: nth($background-color, 1);
         border-radius: $border-radius;
-        border-bottom-right-radius: 0%;
+        padding-top: $padding*3;
+        padding-bottom: $padding*3;
+        background: linear-gradient(145deg, transparent 25%,rgb(0, 143, 98), #e81cff,);
+        background-size: 200% 100%;
+        animation: gradient 5s ease infinite;
+        @include tablet-vertical-max {
+            margin-top: 0%;
+        }
     }
-}
-.main__section__div-icons_nosotros ion-icon {
-    margin-right: $margin;
-    font-size: $font-size;
+    .div2_h2_nosotros {
+        display: flex;
+        justify-content: center;
+    }
+    // h2 music is life
+    .h2_nosotros {
+        background-color: nth($background-color, 1);
+        color: rgb(255, 255, 255);
+        @extend %titulos;
+        font-weight: bold;
+        font-style: $font-style;
+        padding: 3px;
+        padding-left: 3px;
+        width: moz-fit-content;
+        border-radius: $border-radius*2;
+    }
+
+    // h3 
+    .main__div-h3_nosotros {
+        width: 70%;
+        margin-top: $margin;
+        padding: $padding;
+        border-radius: $border-radius;
+        border-top-left-radius: 0px;
+        background-color: rgba(243, 243, 243, 0.354);
+    }
+ 
+    // size y estilo de las img
+    .section__div2-segundaimg_nosotros {
+        text-align: end;
+
+        img {
+            width: 70%;
+            margin-top: calc($margin / 2);
+            height: 300px;
+            object-fit: cover;
+            border: solid 3px;
+            border-color: aliceblue;
+            border-radius: $border-radius;
+            border-bottom-right-radius: 0%;
+        }
+    }
+    .main__section__div-icons_nosotros ion-icon {
+        margin-right: $margin;
+        font-size: calc($font-size * 2);
+    }
 }

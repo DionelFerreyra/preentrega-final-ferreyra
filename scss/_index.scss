@@ -77,7 +77,13 @@
             border-radius: $border-radius*5;
             object-fit: cover;
             position: relative;
-            
+            border: 3px solid transparent;
+            box-sizing: border-box;
+            background: linear-gradient(rgb(33, 33, 33), rgb(33, 33, 33)) padding-box,
+                linear-gradient(145deg, transparent 35%,rgb(0, 143, 98), #e81cff,) border-box;
+            background-size: 200% 100%;
+            animation: gradient 5s ease infinite;
+
             @include tablet-vertical-max {
                 width: 50px;
                 height: 50px;
@@ -127,7 +133,7 @@
             width: 160px;
             border: solid 5px;
             border-color: rgba(114, 114, 114, 0.354);
-            border-radius: $border-radius;
+            border-radius: calc($border-radius / 2);
             background-color: rgba(243, 243, 243, 0.354);
             overflow: hidden;
             

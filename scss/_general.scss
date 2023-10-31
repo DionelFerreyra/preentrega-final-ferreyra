@@ -72,7 +72,7 @@ body {
         color: nth($text-color, 4);
     }
     .nav :hover {
-        color: nth($text-color, 5);
+        color: $hover;
     }
     .nav :active {
         color: $active;

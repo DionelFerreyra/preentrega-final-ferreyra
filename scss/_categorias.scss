@@ -1,11 +1,14 @@
 .div_h2_categorias {
+    margin-top: $margin*2;
+    margin-bottom: $margin*2;
     border: solid 3px;
     border-color: nth($background-color, 1);
     border-radius: $border-radius;
     padding-top: $padding*3;
     padding-bottom: $padding*3;
-    margin-top: $margin*2;
-    margin-bottom: $margin*2;
+    background: linear-gradient(145deg, transparent 25%,rgb(0, 143, 98), #e81cff,);
+    background-size: 200% 100%;
+    animation: gradient 5s ease infinite;
     @include tablet-vertical-max {
         margin-top: 0%;
     }
